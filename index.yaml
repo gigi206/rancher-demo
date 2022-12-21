@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  rancher-demo-helm:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-21T17:16:26.180463036+01:00"
+    description: A Helm chart for Kubernetes
+    digest: c54edd43c0459d767f816bd5740af8df01f0769ad578274bca7e5f9713a419bb
+    name: rancher-demo-helm
+    type: application
+    urls:
+    - https://gigi206.github.io/rancher-demo/rancher-demo-helm-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-12-21T17:16:26.180144552+01:00"
+    description: A Helm chart for Kubernetes
+    digest: 5b14cf6ee71f022957443b5713d3171b25cf8c5f39aaa316333931801b3e9aa8
+    name: rancher-demo-helm
+    type: application
+    urls:
+    - https://gigi206.github.io/rancher-demo/rancher-demo-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-12-21T17:16:26.179708693+01:00"

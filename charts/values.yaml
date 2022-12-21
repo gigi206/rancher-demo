@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 2
-cow_color: green
+cow_color: red
 
 image:
   repository: chrisurwin/rancher-demo
