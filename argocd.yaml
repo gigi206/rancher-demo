@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rancher-demo
+spec:
+  destination:
+    namespace: rancher-demo
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://gigi206.github.io/rancher-demo'
+    targetRevision: 0.1.0
+    chart: rancher-demo-helm
+    helm:
+      parameters:
+        - name: replicaCount
+          value: '2'
+        - name: ingress.host
+          value: rancher-demo.gigix
+        - name: ingress.enabled
+          value: 'true'
+        - name: ingress.className
+          value: nginx
+        # - name: cow_color
+        #   value: green
+  project: default
+  syncPolicy:
+    syncOptions:
+      - PruneLast=true
+      - CreateNamespace=true
